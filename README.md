@@ -34,6 +34,13 @@ Here is my SCRUM! [Trello Board](https://trello.com/b/i3huss7p/layover-angels-pr
 
 #### Technologies used
 
+1. Ruby on Rails
+2. Active Record
+3. Bootstrap
+4. Heroku
+5. Postgresql
+6. TBD 
+
 #### Installation Instructions
 
 #### Unsolved issues
