@@ -1,0 +1,87 @@
+<h1>Request a layover Angel</h1>
+<%= form_for @layover do |f| %>
+<% if @layover.errors.any? %>
+  <div class="error_messages">
+    <h2>Form is invalid</h2>
+    <ul>
+      <% for message in @layover.errors.full_messages %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<div class="field">
+  <%= f.label :Arrival_Date %>
+  <%= f.text_field :a_date%>
+</div>
+<div class="field">
+  <%= f.label :Arrival_Time %>
+  <%= f.password_field :a_time %>
+</div>
+<div class="field">
+  <%= f.label :Are_you_going_through_customs? %>
+  <%= f.password_field :customs %>
+</div>
+
+<div class="field">
+  <%= f.label :number_of_luggage_pieces %>
+  <%= f.text_field :luggage %>
+</div>
+
+<div class="field">
+  <%= f.label :Arrival_Airport %>
+  <%= f.text_field :a_airport %>
+</div>
+
+<div class="field">
+  <%= f.label :Arrival_Terminal %>
+  <%= f.text_field :a_terminal %>
+</div>
+
+<div class="field">
+  <%= f.label :Flight_Number %>
+  <%= f.text_field :flight %>
+</div>
+
+<div class="field">
+  <%= f.label :Airline %>
+  <%= f.text_field :airline %>
+</div>
+
+<div class="field">
+  <%= f.label :Departure_Airport %>
+  <%= f.text_field :d_airport %>
+</div>
+
+<div class="field">
+  <%= f.label :Departure_Time %>
+  <%= f.text_field :d_time %>
+</div>
+
+<div class="field">
+  <%= f.label :Departure_Terminal %>
+  <%= f.text_field :d_terminal %>
+</div>
+
+<div class="field">
+  <%= f.label :Max_hours_needed %>
+  <%= f.text_field :max_time %>
+</div>
+
+<div class="field">
+  <%= f.label :What_do_you_hope_to_accomplish? %>
+  <%= f.text_field :goal %>
+</div>
+
+<div class="field">
+  <%= f.label :Personal_message %>
+  <%= f.text_field :message %>
+</div>
+
+<div class="actions"><%= f.submit %></div>
+
+</p>
+
+<% end %>

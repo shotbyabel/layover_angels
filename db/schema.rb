@@ -11,10 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150727185617) do
+ActiveRecord::Schema.define(version: 20150728210508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "layovers", force: :cascade do |t|
+    t.string   "a_date"
+    t.string   "a_time"
+    t.string   "customs"
+    t.integer  "luggage"
+    t.string   "a_airport"
+    t.string   "a_terminal"
+    t.string   "flight"
+    t.string   "airline"
+    t.string   "d_airport"
+    t.string   "d_time"
+    t.string   "d_terminal"
+    t.integer  "max_time"
+    t.string   "goal"
+    t.text     "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
