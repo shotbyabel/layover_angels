@@ -2,6 +2,7 @@
 <% @users.each do |user| %>
   <p>
     <%= user.email %>
+   <!--  #could delate this password  -->
     <%= user.password_digest %>
   </p>
 <% end %>

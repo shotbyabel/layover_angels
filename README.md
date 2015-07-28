@@ -45,4 +45,14 @@ Here is my SCRUM! [Trello Board](https://trello.com/b/i3huss7p/layover-angels-pr
 
 #### Unsolved issues
 
+shotbyabel@gmail.com
+Abel Alejandro
+abel123
+Abel
+Hernandez
+nil
+I am the creator of Layover Angels.
+
+
+
 

@@ -1,11 +1,11 @@
 class SessionsController < ApplicationController
-end
+
 
 
 def create
-  user = User.find_by(emails:params[:email])
+  user = User.find_by(email: params[:email])
   if user && user.authenticate(params[:password])
-    redirect_to root_path, notice: 'You are in!'
+    redirect_to user_path(user.id), notice: 'You are in!'
   else
     flash.now.alert = "Oops! You must of missed something. Try again."
     end  
@@ -13,4 +13,5 @@ def create
    
 def destroy
   redirect_to root_path, notice: "Catch you next time!"
+end
 end
