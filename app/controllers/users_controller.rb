@@ -5,28 +5,43 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  #DO I continue writing the logic here to route
+  # the new user once they click to register on to the show view?
+  
+
   def new
     @user = User.new
   end
 
+
   def show
-    @user = User.find_by_id(params[:id])
+    @user = User.find(params[:id])
   end
 
   #TODO go over this again carefully
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to_users_path
+      redirect_to '/user/#{params([:id])}'
     else
-    render 'new'
+      render 'new'
+    end  
+  end
+
+
+    def create
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to '/user/#{params([:id])}'
+    else
+      render 'new'
     end  
   end
 
   private
   #strong params security
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:name,:last_name,:email,:password,:password_confirmation,:photo,:bio)
   end
 
 
