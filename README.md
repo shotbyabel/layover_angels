@@ -82,6 +82,69 @@ Hernandez
 
 
 
+:name               Name:                 Abel Alejandro
+:age                  Age:                    33
+:gender               Gender:               M
+:airport                Airport:                  LAX, BUR
+:zodiac               Zodiac:                 Leo
+:languages            Languages:              English, Spanish, Portuguese
+:years                Years in LA:              13
+:bio                  About Me:             n/a
+:top3_localspots        Local Spots:              DTLA, Venice, Santa Monica Mountains
+:top3_travels         Travel Destinations:        Indonesia, Brazil, Baltics
+:top3_historicalfigs      Historical Figures:       Fidel Castro, Malcolm X, Your Mom
+
+:name               Name:                 Vin Diesel
+:age                  Age:                    40
+:gender               Gender:               M
+:airport                Airport:                  ONT, BUR
+:zodiac               Zodiac:                 Scorpio
+:languages            Languages:              English, French
+:years                Years in LA:              10
+:bio                  About Me:             n/a
+:top3_localspots        Local Spots:              The Standard, Hermosa Beach, DTLA
+:top3_travels         Travel Destinations:        Santa Barbara, Las Vegas, Dominican Republic
+:top3_historicalfigs      Historical Figures:       Paul Walker, Bill Clinton, Angela Merkel
+
+:name               Name:                 Ryan Goslin
+:age                  Age:                    25
+:gender               Gender:               M
+:airport                Airport:                  LAX
+:zodiac               Zodiac:                 Pisces 
+:languages            Languages:              English, Love
+:years                Years in LA:              7
+:bio                  About Me:             n/a
+:top3_localspots        Local Spots:              LA River, Pomona Speedway , Hollywood
+:top3_travels         Travel Destinations:        Grand Canyon, Rome, Chicago
+:top3_historicalfigs      Historical Figures:       Abraham Lincoln, Hellen Keller, Charlie Chaplin
+
+:name               Name:                 Will Dayrit
+:age                  Age:                    29
+:gender               Gender:               M
+:airport                Airport:                  ONT, SNA
+:zodiac               Zodiac:                 Libra
+:languages            Languages:              English
+:years                Years in LA:              13
+:bio                  About Me:             n/a
+:top3_localspots        Local Spots:              DTLA, DTF, DTLB
+:top3_travels         Travel Destinations:        Phillippines, Taiwan, Denver
+:top3_historicalfigs      Historical Figures:       Manny Pacquiao, Gengis Khan, Albert Einstein
+
+
+
+:name               Name:                 Amanda Bynes
+:age                  Age:                    29
+:gender               Gender:               F
+:airport                Airport:                  LAX, BUR, ONT, LGB, SNA
+:zodiac               Zodiac:                 Aries
+:languages            Languages:              English
+:years                Years in LA:              29
+:bio                  About Me:             n/a
+:top3_localspots        Local Spots:              Playa del Rey, Redondo, Tijuana
+:top3_travels         Travel Destinations:        Ibiza, Reno,New York
+:top3_historicalfigs      Historical Figures:       Albert Einstein, Hillary Clinton,
+
+
 
 
 
