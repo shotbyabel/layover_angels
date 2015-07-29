@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :layovers, only: [:new, :index, :create, :show]
 
-  resources :users, only: [:index, :new, :create, :show]
+  resources :users, only: [:index, :new, :edit, :create, :show]
 
   resources :sessions, only: [:new, :create, :destroy]
 

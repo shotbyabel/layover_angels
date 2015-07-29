@@ -4,8 +4,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  #DO I continue writing the logic here to route
-  # the new user once they click to register on to the show view?
+  
   def new
     @user = User.new
   end
@@ -14,7 +13,11 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  #TODO go over this again carefully
+  def edit
+  end
+
+  #this is allowing my new registered users to be routed
+  # directly to their new profile/home page
   def create
     @user = User.new(user_params)
     if @user.save
