@@ -92,12 +92,26 @@ nil
 I am test 1
 
 Arrival data
-
+#####MY USERS########
 abel@mail.com
 1234
 Alex
 Hernandez
 
+guy@mail.com
+guy123
+Guy
+Main
+nil
+I am a big traveler
+and enjoy big cities
+
+gal@mail.com
+gal123
+Gal
+Main
+nil
+I am a new traveler and enjoy small towns.
 
 
 :name               Name:                 Abel Alejandro
