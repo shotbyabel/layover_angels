@@ -45,6 +45,24 @@ Here is my SCRUM! [Trello Board](https://trello.com/b/i3huss7p/layover-angels-pr
 
 #### Unsolved issues
 
+
+#######NOTES
+
+Notes from David about SEARCH FORM and angels controller
+
+Questions: I need to determined how many things to search by.
+right now for practical reasons.. gender and airport.
+
+Questions: where do I put my search form?
+-I could create a new controller for searches
+OR 
+I could just finish creating controllers for Angels and
+using one of those actions/views to display my form
+
+David suggest return my form to the angels controller INDEX
+
+####
+
 shotbyabel@gmail.com
 Abel Alejandro
 abel123
