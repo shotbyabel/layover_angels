@@ -13,9 +13,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def edit
-  end
-
   #this is allowing my new registered users to be routed
   # directly to their new profile/home page
   def create
@@ -26,6 +23,10 @@ class UsersController < ApplicationController
     else
       render 'new'
     end  
+  end
+
+  def edit
+    @user = User.find(params[:id])
   end
 
   private
