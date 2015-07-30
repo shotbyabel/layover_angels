@@ -181,6 +181,16 @@ tiffany1@mail.com
 :top3_historicalfigs      Historical Figures:       Albert Einstein, Hillary Clinton,
 
 
+#app-nav {
+background: #223658;
+opacity: 0.7;
+color: white;
+overflow: hidden;
+border-bottom: 2px solid grey;
+padding: 20px 3%;
+height: 75px;
+}
+
 
 
 

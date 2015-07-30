@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:new, :create, :destroy]
 
+  resources :filters, only: [:index, :new, :edit, :show] 
+
   #sessions / logout  sessions/destroy
 
 

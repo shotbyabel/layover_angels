@@ -4,17 +4,36 @@
 
   /*background-image: black center center no-repeat;*/
 
+div#title{ 
+font-family: 'Sonsie One', cursive;
+color: black;
+text-align: center;
+font-style: italic;
+font-size: 4em;
+opacity: 0.8;
+text-shadow: 3px 2px 3px black;
+-webkit-animation: fadein 2.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  
+-moz-animation: fadein 2.5s;
+  /* Firefox < 16 */
+  
+-ms-animation: fadein 2.5s;
+  /* Internet Explorer */
+
+}
+
+div#slogan{
+font-family: 'Oregano', cursive;
+color:blue;
+font-size: 1.75em;
+font-style: italic;
+text-align: right;
+
+}
+
+
 div.container {
 
-  background-image: url(/assets/angelsbg6.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-color: black; 
-  color: white;
-  font-size: 1.0em;
-  line-height: 1.4;
-  font-family: "Trebuchet MS", Geneva, sans-serif
 
 }
