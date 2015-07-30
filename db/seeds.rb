@@ -8,6 +8,7 @@
 
 Angel.destroy_all
 Layover.destroy_all
+User.destroy_all
 
 abel = Angel.create( 
   name:      "Abel", 
@@ -84,15 +85,13 @@ tara = Angel.create(
   photo_uri: ""
 )
 
+User.new(
+  name:      "Phil",
+  last_name: "Hughes",
+  email:     "pj@ga.co",
+  password:  "123",
+  password_confirmation: "123",
+  photo:     "http://how-rich.org/wp-content/uploads/2015/05/Taran-Killam.jpg",
+  bio:       "I was born in a fiery blaze o tthe edge night, and raised with anger in my heart. Rock n Roll!"
+).save
 
-
-
-
-
-
-
-
-
-
-
-# binding.pry
