@@ -1,0 +1,9 @@
+<h1>Angels List</h1>
+
+<p>Here are the angels:</p>
+
+<ul>
+  <% @angels.each do |angel| %>
+    <li><%= angel.name %>, <%= angel.gender %></li>
+  <% end %>
+</ul>

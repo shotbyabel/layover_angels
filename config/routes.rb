@@ -9,7 +9,11 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:new, :create, :destroy]
 
-  resources :filters, only: [:index, :new, :edit, :show] 
+  resources :angels, only: [:index] do
+    collection do
+      get "filters"
+    end
+  end
 
   #sessions / logout  sessions/destroy
 
