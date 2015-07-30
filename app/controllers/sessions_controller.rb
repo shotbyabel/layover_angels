@@ -8,11 +8,13 @@ class SessionsController < ApplicationController
 def create
   user = User.find_by(email: params[:email])
   if user && user.authenticate(params[:password])
+    session[:user_id] = user.id
     redirect_to user_path(user.id), notice: 'You are in!'
+
   else
     flash.now.alert = "Oops! You must of missed something. Try again."
     end  
-   end
+  end
 
 ######
  # def create
@@ -35,6 +37,8 @@ def create
  #    )  
    
 def destroy
+  session[:user_id] = nil
   redirect_to root_path, notice: "Catch you next time!"
+  #set session to 'nil' here 
 end
 end

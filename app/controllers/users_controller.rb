@@ -34,6 +34,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
     #perform the sucessful edit 
+      redirect_to user_path(@user)
     else
       render 'edit'
      end
