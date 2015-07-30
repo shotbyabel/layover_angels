@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150729000501) do
     t.string   "top3_localspots"
     t.string   "top3_travels"
     t.string   "top3_historicalfigs"
-    t.string   "photo"
+    t.string   "photo_uri"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
