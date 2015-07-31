@@ -1,15 +1,24 @@
 class AngelsController < ApplicationController
-  
+
   def index
-    binding.pry
+    # binding.pry
+
     # apply filters to the angel list and show results
-    # if params[:gender] == "male"
-    #   @users = Angel.males
-    # elsif params[:gender] == "female"
-    #   @users = Angel.females
-    # else
-      @angels = Angel.all
-    # end
+    
+    # "languages"=>["ENGLISH"]
+
+    # "age"=>["21-27", "28-33", "34-39", "40-50", "51-63"],
+    # ages = params[:age].map { |ar| ar.split("-").map { |a| a.to_i } }
+
+    @angels = Angel.where(gender: params[:gender])
+
+    if params[:zodiac]
+      @angels = @angels.where(zodiac: params[:zodiac])
+    end
+
+    if params[:airport]
+      @angels = @angels.reject { |angel| (angel.airport & params[:airport]).empty? }
+    end
   end
 
 

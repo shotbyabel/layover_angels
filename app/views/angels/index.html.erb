@@ -1,9 +1,49 @@
+<style type="text/css">
+
+li#ourname{ 
+font-family: 'Helvetica', cursive;
+color: black;
+font-size: 2.5em;
+
+
+}
+
+</style>
+
+
 <h1>Angels List</h1>
 
 <p>Here are the angels:</p>
 
 <ul>
   <% @angels.each do |angel| %>
-    <li><%= angel.name %>, <%= angel.gender %></li>
+    <li id="ourname">
+      <img src="<%= angel.photo_uri %>" width="205"> <%= angel.name %>
+    </li>
+    <li>
+      <%= angel.airport %>
+    </li>
+    <li>
+      <%= angel.age %>, <%= angel.gender %>,, <%= angel.zodiac %>
+    </li>
+    <li>
+      <%= angel.languages %>
+    </li>
+    <li>Favorite Local spots:
+      <%= angel.top3_localspots %>
+    </li>
+    <li>Favorite travel spots:
+      <%= angel.top3_travels %>
+    </li>
+    <li>Favorite historical figures:
+      <%= angel.top3_historicalfigs %>
+    </li>
+    <li>about me:
+      <%= angel.bio %>
+    </li>
+    <br>
+    <br>
+
+
   <% end %>
 </ul>

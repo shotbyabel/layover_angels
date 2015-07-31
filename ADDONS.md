@@ -163,3 +163,21 @@ end
      end
    
    ```
+
+   REACHING INTO THE BUCKET
+
+   [30] layover_angels(main)> Angel.all.each {|angel| puts angel.name}
+  Angel Load (0.6ms)  SELECT "angels".* FROM "angels"
+Ryan Gosling
+Abel
+Will
+Vin Diesel
+Tara Milch
+Lola Tag
+Julie Bean
+
+on the users_edit.. REMOVED
+
+<form accept-charset="UTF-8" action="/users/1" class="edit_user"
+      id="edit_user_1" method="post">
+  <input name="_method" type="hidden" value="patch" />

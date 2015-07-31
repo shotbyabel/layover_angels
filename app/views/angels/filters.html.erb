@@ -22,6 +22,18 @@
     border-color: gray;
     color: gray;
   }
+
+  input[type="checkbox"]:checked + span.zodiac {
+    background-color: black;
+    border-color: gray;
+    color: white;
+  }
+
+  input[type="checkbox"]:checked + span.languages {
+    background-color: orange;
+    border-color: gray;
+    color: gray;
+  }
 </style>
 
 <h3>Find your Layover Angel</h3>
@@ -32,11 +44,11 @@
   <div>
     <label>
       <%= check_box_tag "gender[]", "male" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="gender btn btn-primary">MEN</span>
     </label>
     <label>
       <%= check_box_tag "gender[]", "female" %>
-      <span class="gender btn btn-primary">Women</span>
+      <span class="gender btn btn-primary">WOMEN</span>
     </label>
   </div>
 
@@ -72,79 +84,79 @@
   <div>
     <label>
       <%= check_box_tag "age[]", "21-27" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="age-range btn btn-primary">21-27</span>
     </label>
     <label>
       <%= check_box_tag "age[]", "28-33" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="age-range btn btn-primary">28-33</span>
     </label>
     <label>
       <%= check_box_tag "age[]", "34-39" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="age-range btn btn-primary">34-39</span>
     </label>
     <label>
       <%= check_box_tag "age[]", "40-50" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="age-range btn btn-primary">40-50</span>
     </label>
     <label>
       <%= check_box_tag "age[]", "51-63" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="age-range btn btn-primary">51-63</span>
     </label>
   </div>
 
 <h4>ZODIAC</h4>
    <div>
     <label>
-      <%= check_box_tag "zodiac[]", "ARIES" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "aries" %>
+      <span class="zodiac btn btn-primary">ARIES</span>
     </label>
     <label>
-      <%= check_box_tag "zodiac[]", "TAURUS" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "taurus" %>
+      <span class="zodiac btn btn-primary">TAURUS</span>
     </label>
     <label>
-      <%= check_box_tag "zodiac[]", "GEMINI" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "gemini" %>
+      <span class="zodiac btn btn-primary">GEMINI</span>
     </label>
     <label>
-      <%= check_box_tag "zodiac[]", "CANCER" %>
-      <span class="gender btn btn-primary">Men</span>
-    </label>
-   </div>  
-   <div>
-    <label>
-      <%= check_box_tag "zodiac[]", "LEO" %>
-      <span class="gender btn btn-primary">Men</span>
-    </label>
-    <label>
-      <%= check_box_tag "zodiac[]", "VIRGO" %>
-      <span class="gender btn btn-primary">Men</span>
-    </label>
-    <label>
-      <%= check_box_tag "zodiac[]", "LIBRA" %>
-      <span class="gender btn btn-primary">Men</span>
-    </label>
-    <label>
-      <%= check_box_tag "zodiac[]", "SCORPIO" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "cancer" %>
+      <span class="zodiac btn btn-primary">CANCER</span>
     </label>
    </div>  
    <div>
     <label>
-      <%= check_box_tag "zodiac[]", "SAGITTARIUS" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "leo" %>
+      <span class="zodiac btn btn-primary">LEO</span>
     </label>
     <label>
-      <%= check_box_tag "zodiac[]", "AQUARIUS" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "virgo" %>
+      <span class="zodiac btn btn-primary">VIRGO</span>
     </label>
     <label>
-      <%= check_box_tag "zodiac[]", "CAPRICORN" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "libra" %>
+      <span class="zodiac btn btn-primary">LIBRA</span>
     </label>
     <label>
-      <%= check_box_tag "zodiac[]", "PISCES" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "zodiac[]", "scorpio" %>
+      <span class="zodiac btn btn-primary">SCORPIO</span>
+    </label>
+   </div>  
+   <div>
+    <label>
+      <%= check_box_tag "zodiac[]", "sagittarius" %>
+      <span class="zodiac btn btn-primary">SAGITTARIUS</span>
+    </label>
+    <label>
+      <%= check_box_tag "zodiac[]", "aquarious" %>
+      <span class="zodiac btn btn-primary">AQUARIOUS</span>
+    </label>
+    <label>
+      <%= check_box_tag "zodiac[]", "capricorn" %>
+      <span class="zodiac btn btn-primary">CAPRICORN</span>
+    </label>
+    <label>
+      <%= check_box_tag "zodiac[]", "pisces" %>
+      <span class="zodiac btn btn-primary">PISCES</span>
     </label>
    </div>  
 
@@ -153,31 +165,31 @@
    <div>
     <label>
       <%= check_box_tag "languages[]", "ENGLISH" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="languages btn btn-primary">English</span>
     </label>
     <label>
       <%= check_box_tag "languages[]", "SPANISH" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="languages btn btn-primary">Spanish</span>
     </label>
    </div>
    <div> 
     <label>
       <%= check_box_tag "languages[]", "GERMAN" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="languages btn btn-primary">German</span>
     </label>
     <label>
       <%= check_box_tag "languages[]", "FRENCH" %>
-      <span class="gender btn btn-primary">Men</span>
+      <span class="languages btn btn-primary">French</span>
     </label>
    </div> 
    <div> 
     <label>
-      <%= check_box_tag "languages[]", "MANDARIN" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "languages[]", "Mandarin" %>
+      <span class="languages btn btn-primary">Mandarin</span>
     </label>
     <label>
-      <%= check_box_tag "languages[]", "ARABIC" %>
-      <span class="gender btn btn-primary">Men</span>
+      <%= check_box_tag "languages[]", "Arabic" %>
+      <span class="languages btn btn-primary">Arabic</span>
     </label>
    </div> 
 
