@@ -1,6 +1,8 @@
 ### Project 2 Layover Angels 
 ***a Rails Full Stack App by Abel***
 
+!image[](/desktop/app.jpg)
+
 #### vist the app
 [Layover Angels](https://quiet-chamber-7379.herokuapp.com/).
 
