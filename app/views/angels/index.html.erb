@@ -2,9 +2,16 @@
 
 li#ourname{ 
 font-family: 'Helvetica', cursive;
-color: black;
-font-size: 2.5em;
+color: white;
+font-size: 2.75em;
+text-shadow: 1px 1px 1px black;
+}
 
+div.info{
+font-family: 'Helvetica', cursive;
+color: white;
+font-size: 1.45em;
+text-shadow: 1px 1px 1px black;
 
 }
 
@@ -12,14 +19,14 @@ font-size: 2.5em;
 
 
 <h1>Angels List</h1>
-
-<p>Here are the angels:</p>
+<br>
 
 <ul>
   <% @angels.each do |angel| %>
     <li id="ourname">
       <img src="<%= angel.photo_uri %>" width="205"> <%= angel.name %>
     </li>
+     <div class="info">
     <li>
       <%= angel.airport %>
     </li>
@@ -42,8 +49,9 @@ font-size: 2.5em;
       <%= angel.bio %>
     </li>
     <br>
-    <br>
-
+    </div>
 
   <% end %>
 </ul>
+</div>
+
