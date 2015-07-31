@@ -1,24 +1,29 @@
 ### Project 2 Layover Angels 
 ***a Rails Full Stack App by Abel***
 
+#### vist the app
+[Layover Angels](https://quiet-chamber-7379.herokuapp.com/).
+
 **LINK to TRELLO board**
 Here is my SCRUM! [Trello Board](https://trello.com/b/i3huss7p/layover-angels-project-2-abel).
 
 #### User stories MVP
 
-- As a user I need to see a home page so that I can register or log in.
+- [x] As a user I need to see a home page so that I can register or log in.
 
-- As a user I want to be able to find a knowledgable local and available members (aka Layover Angels ""LAs") that can help me complete time sensitive task during a **brief layover** at the airport.
+- [x] As a user I want to update my profile info.
 
-- As a user I need to be able to select this Layover Angel based on their profile which needs to include, photo, car details, brief bio and positive references from past users
+- [x] As a user I want to be able to find a knowledgable local and available members (aka Layover Angels ""LAs") that can help me complete time sensitive task during a **brief layover** at the airport.
 
-- As a user I would like to **filter** the Layover Angel profiles by gender, positive references and similar interest
+- [x] As a user I need to be able to select this Layover Angel based on their profile which needs to include, photo and a brief bio
 
-- As a user I need to send them a personalized written request for assistance
+-  [x] As a user I would like to **filter** the Layover Angel profiles by gender, airports. zodiac sign and languages.
 
-- In my request form for the Layover Angel I need to have category boxes of exclusive requirements in order for the member to be 100% certain that they can meets all of them and they're able to fully help me.
+- [ ] As a user I need to send them a personalized written request for assistance
 
-- As a user I need to receive a reply with confirmation that my request was accepted by the Layover Angel with a detailed personal message. 
+- [ ] In my request form for the Layover Angel I need to have category boxes of exclusive requirements in order for the member to be 100% certain that they can meets all of them and they're able to fully help me.
+
+- [ ] As a user I need to receive a reply with confirmation that my request was accepted by the Layover Angel with a detailed personal message. 
 
 #### ICEBOX
 
@@ -33,163 +38,28 @@ Here is my SCRUM! [Trello Board](https://trello.com/b/i3huss7p/layover-angels-pr
 -As a user I would like to register to be a an ""LA" Layover Angel
 
 #### Technologies used
-1. Action Mailer
 1. Ruby on Rails
 2. Active Record
-3. Bootstrap
+3. Bootstrap buttons
 4. Heroku
 5. Postgresql
 6. TBD 
 
 #### Installation Instructions
 
+1. visit the link [Layover Angels](https://quiet-chamber-7379.herokuapp.com/).
+2. create a profile by siging up.
+3. Find your Layover Angel 
+4. Filter through the different profies.
+5. view them and decided who to contact. 
+
 #### Unsolved issues
 
-
-#######NOTES
-
-Notes from David about SEARCH FORM and angels controller
-
-Questions: I need to determined how many things to search by.
-right now for practical reasons.. gender and airport.
-
-Questions: where do I put my search form?
--I could create a new controller for searches
-OR 
-I could just finish creating controllers for Angels and
-using one of those actions/views to display my form
-
-David suggest return my form to the angels controller INDEX
-
-####
-
-shotbyabel@gmail.com
-Abel Alejandro
-abel123
-Abel
-Hernandez
-nil
-I am the creator of Layover Angels.
-
-taylor1@taylor.com
-taylor1
-Taylor
-Gangordie
-coming soon
-
-mai@mai.com
-Mai 
-Lill
-mai123
-nil
-I am here.
-
-test1mail.com
-Test
-One
-test123
-nil
-I am test 1
-
-Arrival data
-#####MY USERS########
-abel@mail.com
-1234
-Alex
-Hernandez
-
-guy@mail.com
-guy123
-Guy
-Main
-nil
-I am a big traveler
-and enjoy big cities
-
-gal@mail.com
-gal123
-Gal
-Main
-nil
-I am a new traveler and enjoy small towns.
-
-tiffany1@mail.com
-1234
+Pressed for time and didn't sort out member log off. The logic is there but missing link.
+Filtering by age turned out to be a complicated task. I didn't get Action Mailer going eithe. 
 
 
 
-:name               Name:                 Abel Alejandro
-:age                  Age:                    33
-:gender               Gender:               M
-:airport                Airport:                  LAX, BUR
-:zodiac               Zodiac:                 Leo
-:languages            Languages:              English, Spanish, Portuguese
-:years                Years in LA:              13
-:bio                  About Me:             n/a
-:top3_localspots        Local Spots:              DTLA, Venice, Santa Monica Mountains
-:top3_travels         Travel Destinations:        Indonesia, Brazil, Baltics
-:top3_historicalfigs      Historical Figures:       Fidel Castro, Malcolm X, Your Mom
-
-:name               Name:                 Vin Diesel
-:age                  Age:                    40
-:gender               Gender:               M
-:airport                Airport:                  ONT, BUR
-:zodiac               Zodiac:                 Scorpio
-:languages            Languages:              English, French
-:years                Years in LA:              10
-:bio                  About Me:             n/a
-:top3_localspots        Local Spots:              The Standard, Hermosa Beach, DTLA
-:top3_travels         Travel Destinations:        Santa Barbara, Las Vegas, Dominican Republic
-:top3_historicalfigs      Historical Figures:       Paul Walker, Bill Clinton, Angela Merkel
-
-:name               Name:                 Ryan Goslin
-:age                  Age:                    25
-:gender               Gender:               M
-:airport                Airport:                  LAX
-:zodiac               Zodiac:                 Pisces 
-:languages            Languages:              English, Love
-:years                Years in LA:              7
-:bio                  About Me:             n/a
-:top3_localspots        Local Spots:              LA River, Pomona Speedway , Hollywood
-:top3_travels         Travel Destinations:        Grand Canyon, Rome, Chicago
-:top3_historicalfigs      Historical Figures:       Abraham Lincoln, Hellen Keller, Charlie Chaplin
-
-:name               Name:                 Will Dayrit
-:age                  Age:                    29
-:gender               Gender:               M
-:airport                Airport:                  ONT, SNA
-:zodiac               Zodiac:                 Libra
-:languages            Languages:              English
-:years                Years in LA:              13
-:bio                  About Me:             n/a
-:top3_localspots        Local Spots:              DTLA, DTF, DTLB
-:top3_travels         Travel Destinations:        Phillippines, Taiwan, Denver
-:top3_historicalfigs      Historical Figures:       Manny Pacquiao, Gengis Khan, Albert Einstein
-
-
-
-:name               Name:                 Amanda Bynes
-:age                  Age:                    29
-:gender               Gender:               F
-:airport                Airport:                  LAX, BUR, ONT, LGB, SNA
-:zodiac               Zodiac:                 Aries
-:languages            Languages:              English
-:years                Years in LA:              29
-:bio                  About Me:             n/a
-:top3_localspots        Local Spots:              Playa del Rey, Redondo, Tijuana
-:top3_travels         Travel Destinations:        Ibiza, Reno,New York
-:top3_historicalfigs      Historical Figures:       Albert Einstein, Hillary Clinton,
-
-
-#app-nav {
-background: #223658;
-opacity: 0.7;
-color: white;
-overflow: hidden;
-border-bottom: 2px solid grey;
-padding: 20px 3%;
-height: 75px;
-}
 
 
 

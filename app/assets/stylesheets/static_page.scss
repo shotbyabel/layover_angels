@@ -4,9 +4,18 @@
 
   /*background-image: black center center no-repeat;*/
 
-div#title{ 
-font-family: 'Sonsie One', cursive;
-color: black;
+body{
+    background:url("angelsbg7.jpg") no-repeat;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.title{ 
+font-family: 'Sonsie One', 'Trebuchet MS', 'Tahoma';
+color: white;
 text-align: center;
 font-style: italic;
 font-size: 4em;
@@ -25,10 +34,11 @@ text-shadow: 3px 2px 3px black;
 
 div#slogan{
 font-family: 'Oregano', cursive;
-color:blue;
-font-size: 1.75em;
+color:white;
+font-size: 1.85em;
 font-style: italic;
 text-align: right;
+text-shadow: 3px 2px 3px black;
 
 }
 
