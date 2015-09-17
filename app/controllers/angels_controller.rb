@@ -7,8 +7,8 @@ class AngelsController < ApplicationController
     
     # "languages"=>["ENGLISH"]
 
-     "age"=>["21-27", "28-33", "34-39", "40-50", "51-63"],
-     ages = params[:age].map { |ar| ar.split("-").map { |a| a.to_i } }
+     # "age"=>["21-27", "28-33", "34-39", "40-50", "51-63"],
+     # ages = params[:age].map { |ar| ar.split("-").map { |a| a.to_i } }
 
     @angels = Angel.where(gender: params[:gender])
 

@@ -4,8 +4,17 @@
 
   /*background-image: black center center no-repeat;*/
 
+/*body{*/
+/*background-color:black;*/
 body{
-background-color:black;
+
+background:url("angelsbg7.jpg") no-repeat;
+background-size:cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
 }
 
 div.title{ 
@@ -28,7 +37,7 @@ text-shadow: 3px 2px 3px black;
 }
 
 div#slogan{
-font-family: 'Oregano', cursive;
+font-family: 'Oregano', 'Tahoma';
 color:white;
 font-size: 1.95em;
 font-style: italic;
